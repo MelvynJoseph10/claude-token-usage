@@ -55,10 +55,10 @@ This is fixed overhead — not your usage. Only the **Messages** category grows 
 
 ## Fresh Terminal vs. Active Session
 
-| | Messages Tokens | Total |
-|---|---|---|
-| Fresh terminal | ~8 tokens | ~15–17k |
-| Active session (long chat) | 1k–3k+ | 18k+ |
+| Session Type               | Messages Tokens | Total   |
+|:--------------------------|:---------------:|:-------:|
+| Fresh terminal             | ~8 tokens       | ~15–17k |
+| Active session (long chat) | 1k–3k+          | 18k+    |
 
 Everything else (system prompt, tools, skills) stays the same across sessions. Only Messages grows as you converse.
 
