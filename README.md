@@ -79,3 +79,26 @@ The system prompt, tools, and skills are the same in every session. Only **Messa
 1. Open Claude Code in any terminal
 2. Type `/context` and press Enter
 3. You'll see a visual breakdown of your current session's token usage
+
+---
+
+## Statusline Script (`statusline.py`)
+
+A Python script that displays a live token usage bar in your terminal statusline.
+
+**Output looks like:**
+```
+claude-sonnet-4-6 | [████░░░░░░░░░░░░░░░░] 9% | 17k/200k tokens
+```
+
+**Setup:**
+```bash
+# Place the script in your Claude config directory
+cp statusline.py ~/.claude/statusline.py
+chmod +x ~/.claude/statusline.py
+
+# Run it
+python3 ~/.claude/statusline.py
+```
+
+The script reads token usage data from Claude Code's JSON output and renders a progress bar with model name, percentage used, and token counts.
